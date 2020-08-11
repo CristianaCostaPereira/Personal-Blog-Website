@@ -1,6 +1,6 @@
 @import "post.css";
 @import "navbar.css";
-@import "css/all.min.css";
+@import "all.min.css";
 @import "https://fonts.googleapis.com/css2?family=Charm&family=Dancing+Script:wght@700&display=swap";
 
 body {
@@ -61,8 +61,12 @@ header {
     align-self: center;
 }
 
+.about-me-creator span {
+    font-size: 15px;
+}
+
 .about-me-creator span strong {
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .blogger-info {

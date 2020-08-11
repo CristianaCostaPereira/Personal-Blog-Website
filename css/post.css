@@ -47,3 +47,8 @@
 .post-page {
     padding: 20px;
 }
+
+figcaption {
+    font-size: 15px;
+    color: gray;
+}
