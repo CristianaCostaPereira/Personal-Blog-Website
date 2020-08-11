@@ -1,0 +1,140 @@
+@import "post.css";
+@import "navbar.css";
+@import "css/all.min.css";
+@import "https://fonts.googleapis.com/css2?family=Charm&family=Dancing+Script:wght@700&display=swap";
+
+body {
+    background: #f1f1f1;
+    margin: 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(7 auto);
+    grid-template-areas:
+    "hd hd hd hd hd hd"
+    "th th th th th th"
+    "th th th th th th"
+    "am am am am am am"
+    "pp pp pp pp pp pp"
+    "fm fm fm fm fm fm"
+    "ft ft ft ft ft ft";
+    grid-gap: 20px;
+    padding: 20px;
+    border: 2px, solid, green;
+}
+
+header {
+    grid-area: hd;
+    padding: 25px;
+    font-size: 39px;
+    text-align: center;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me {
+    grid-area: am;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.about-me:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.about-me-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-me-creator {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.about-me-creator span strong {
+    font-size: 19px;
+}
+
+.blogger-info {
+    padding: 2px 16px;
+}
+
+.blogger-image {
+    height: 127px;
+    width: 122px;
+    border: 3px solid rgb(16, 90, 95);
+    border-radius: 100%;
+    background-position: top center;
+}
+
+.popular-posts {
+    grid-area: pp;
+    background: white;
+    padding: 20px;
+}
+
+.contact-me {
+    grid-area: fm;
+    background: white;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: ft;
+    background: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer div {
+    padding-top: 8px;
+}
+
+.creator {
+    color: #031D44;
+    text-align: end;
+    font-weight: 400px;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.subscribe-button {
+    display: inline-block;
+    background-color:rgba(3, 99, 78, 0.815);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    transition: all .3s;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+@media(min-width:800px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(6, auto) 200px 200px;
+        grid-template-rows: 200px auto auto auto auto;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "th th th th th th am am"
+        "th th th th th th pp pp"
+        "th th th th th th fm fm"
+        "ft ft ft ft ft ft ft ft";
+        grid-gap: 20px;
+        padding: 20px;
+    }
+}
