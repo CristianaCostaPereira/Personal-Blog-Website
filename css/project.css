@@ -93,7 +93,7 @@ header {
     padding: 20px;
 }
 
-.footer {
+footer {
     grid-area: ft;
     background: white;
     padding: 25px;
@@ -101,7 +101,7 @@ header {
     margin-top: 20px;
 }
 
-.footer div {
+footer div {
     padding-top: 8px;
 }
 
